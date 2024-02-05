@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links icos font awesome-->
+    <script src="https://kit.fontawesome.com/487c61926c.js" crossorigin="anonymous"></script>
+    <!-- links icos font awesome-->
+    <link rel="stylesheet" href="index.css">
+    <title>Encurtador</title>
+</head>
+<body>
+    <div class="site">
+        <div class="logo">
+            <a href="/index.html"><i class="fa-solid fa-link"></i></a>
+            <h1>Encurtador de links MR</h1>
+            <p>Deixe seu link menor <i class="fa-solid fa-arrow-down"></i></p>
+        </div>
+        <div class="encurtador">
+            <input type="text" id="originalUrl" placeholder="Digite seu link aqui">
+            <button onclick="exibirModal()">Encurtar</button>
+
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/ismael.moraes_?igsh=MXRuamF1aDh1dGdlcg=="  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ismael-moraes-15790828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="modal-espaco" id="meuModal">
+            <div class="modal-header">
+                <h2>Link Encurtado</h2>
+                <button id="fecharModal">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <span class="modal-link">Link encurtado: 
+                <p id="shortenedUrl"></p>
+            </span>
+            <button id="botao-copiar" class="btn-copiar">
+                <i class="fa-regular fa-copy"></i> Copiar
+            </button>
+        </div>
+    </div>
+</body>
+    <script src="index.js"></script>
+</html>
